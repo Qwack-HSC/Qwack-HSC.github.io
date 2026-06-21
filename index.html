@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trial Study</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <style>
+        /* Remove default browser gaps and fill screen */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        /* Use Flexbox to stack the header and calendar vertically */
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: #f0f4f9; /* Optional visual background */
+        }
+
+        /* Formatting fix: Removes the dot from the list */
+        header ul {
+            list-style-type: none; 
+            margin: 0;
+            padding: 15px; /* Adds space inside your navigation bar */
+        }
+
+        header ul li {
+            font-size: xx-large;
+            font-style: italic;
+            font-weight: 500;
+            font-family: 'Open Sans', sans-serif;
+            color: #0b57d0;
+        }
+
+        /* Force container to take up all remaining vertical space */
+        .calendar-container {
+            flex-grow: 1;
+            width: 100%;
+        }
+
+        /* Stretch the iframe to 100% of the parent container */
+        .calendar-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none; /* Removes the default ugly border */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li>Trial Study Timetable</li>
+        </ul>
+    </header>
+    <div class="calendar-container">
+        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Australia%2FSydney&mode=WEEK&showTitle=0&showPrint=0&showTabs=0&showCalendars=0&showTz=0&src=Y182MGU3ZDMyZDg2Yjg5OTM0YzM0YTlmYWEyZGM4NDE5NjRjZWZjMzg4OTIzZGFjZTkzNWY2M2M3NTFkYmYwOTQ1QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23e67c73" style="border-width:0" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+    </div>
